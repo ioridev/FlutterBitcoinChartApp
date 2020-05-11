@@ -1,16 +1,9 @@
-# tradeapp
+# ビットコインのチャートを表示するアプリ
 
-A new Flutter application.
+ビットコインのチャートを表示するアプリ、Flutterで実装されています。
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Simulator Screen Shot - iPhone 8 - 2020-05-11 at 18 41 05](https://user-images.githubusercontent.com/41247249/81547589-03c8a200-93b7-11ea-8d69-6a5c97bc8130.png)
+![Simulator Screen Shot - iPhone 8 - 2020-05-11 at 18 41 02](https://user-images.githubusercontent.com/41247249/81547597-06c39280-93b7-11ea-91ca-321fd1bc50df.png)
+![Simulator Screen Shot - iPhone 8 - 2020-05-11 at 18 40 58](https://user-images.githubusercontent.com/41247249/81547600-0925ec80-93b7-11ea-8814-59fb55a941ea.png)
