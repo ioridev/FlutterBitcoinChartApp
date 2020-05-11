@@ -1,0 +1,42 @@
+{
+  "name": "Tredeapp",
+  "css_prefix_text": "",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "876fe76e1dcd7c54a7f645e7a9844754",
+      "css": "indicator",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M256.4 567.1V889.1H402.6V569.1L329.5 508.3 256.4 567.1ZM10.8 889.1H157V647.3L10.8 765.1V889.1ZM502 651.8V889.2H648.2V577.9L531.4 676.2 502 651.8ZM747.6 889.1H893.8V371.2L747.6 494.2V889.1ZM709.6 110.9L828.6 225.2 531.3 475.3 329.5 307.3 10 565V676.3L329.5 418.7 531.3 586.7 890.3 284.6 990 380.4V110.9H709.6Z",
+        "width": 1000
+      },
+      "search": [
+        "indicator"
+      ]
+    },
+    {
+      "uid": "9cc990bbcac7aa8504078b3f49df79b1",
+      "css": "commenting-o",
+      "code": 62075,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "2c0b53280f82068f6bab4e2200025d9f",
+      "css": "chat",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "26f5aa38f3889213334b3990b4ad483b",
+      "css": "rss",
+      "code": 59394,
+      "src": "websymbols"
+    }
+  ]
+}
