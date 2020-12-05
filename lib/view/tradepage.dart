@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:k_chart/flutter_k_chart.dart';
 import 'package:k_chart/k_chart_widget.dart';
 import 'package:http/http.dart' as http;
-import '../tredeapp_icons.dart';
 
 class TradePage extends StatefulWidget {
   @override
@@ -38,7 +37,7 @@ class _TradePageState extends State<TradePage> {
       body: ListView(
         children: <Widget>[
           Stack(children: <Widget>[
-            Container(
+            SizedBox(
               height: MediaQuery.of(context).size.height / 1.9,
               width: double.infinity,
               child: KChartWidget(
