@@ -21,13 +21,12 @@ class _TradePageState extends State<TradePage> {
   @override
   void initState() {
     super.initState();
-    getData('1hor');
-    Timer.periodic(const Duration(seconds: 1), _onTimer);
+    getData('1day');
+    //Timer.periodic(const Duration(seconds: 10), _onTimer);
   }
 
   void _onTimer(Timer timer) {
     getData('1day');
-    fetchTickerData();
   }
 
   @override
@@ -56,7 +55,12 @@ class _TradePageState extends State<TradePage> {
                   alignment: Alignment.center,
                   child: const CircularProgressIndicator()),
           ]),
-          buildButtons()
+          buildButtons(),
+          FlatButton(
+              onPressed: () async {
+                await getData('1day');
+              },
+              child: const Text('更新'))
         ],
       ),
     );
@@ -116,6 +120,7 @@ class _TradePageState extends State<TradePage> {
         'https://api-cloud.huobi.co.jp/market/history/kline?period=${period ?? '1day'}&size=300&symbol=btcjpy';
     String result;
     final response = await http.get(url);
+    print(url);
     if (response.statusCode == 200) {
       result = response.body;
     } else {
@@ -138,19 +143,5 @@ class _TradePageState extends State<TradePage> {
         )
       ]),
     );
-  }
-
-  Future<void> fetchTickerData() async {
-    const url =
-        'https://api-cloud.huobi.co.jp/market/detail/merged?symbol=btcjpy';
-    final response = await http.get(url);
-    if (response.statusCode == 200) {
-      final ticker = json.decode(response.body) as Map<String, dynamic>;
-      final tick = ticker['tick'] as Map<String, dynamic>;
-
-      setState(() {});
-    } else {
-      throw Exception('Failed to load');
-    }
   }
 }
